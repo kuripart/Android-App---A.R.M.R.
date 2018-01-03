@@ -1,81 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.kuri.motorcontroller.MainActivity">
 
-    <Button
-        android:id="@+id/bluetooth_find"
+
+    <TextView
+        android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SEARCH BLUETOOTH DEVICES"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="165dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="59dp"
+        android:text="WELCOME TO APP RUN MOBILE ROBOT"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:visibility="visible"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/accountPresentText"
+        android:layout_alignStart="@+id/accountPresentText" />
 
-    <Button
-        android:id="@+id/cw"
+    <TextView
+        android:id="@+id/accountPresentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bluetooth_find"
-        android:layout_centerHorizontal="true"
-        android:text="CW MOTOR 1" />
+        android:layout_marginTop="96dp"
+        android:fontFamily="serif-monospace"
+        android:text="REGISTERED WITH US?"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_below="@+id/welcomeText"
+        android:layout_toLeftOf="@+id/registerButton"
+        android:layout_toStartOf="@+id/registerButton"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
 
-    <Button
-        android:id="@+id/ccw"
+    <TextView
+        android:id="@+id/newUserText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cw"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
-        android:text="CCW MOTOR 1" />
+        android:layout_marginTop="80dp"
+        android:fontFamily="serif-monospace"
+        android:text="LOGIN"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_below="@+id/registerButton"
+        android:layout_alignLeft="@+id/accountPresentText"
+        android:layout_alignStart="@+id/accountPresentText" />
 
     <Button
-        android:id="@+id/servo_180"
+        android:id="@+id/registerButton"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SERVO 180 TURN"
-        android:layout_below="@+id/all_ccw"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_alignBaseline="@+id/accountPresentText"
+        android:layout_alignBottom="@+id/accountPresentText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Click Me to Register"
+        android:visibility="visible" />
 
     <Button
-        android:id="@+id/cw_mt2"
+        android:id="@+id/loginButton"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="CW Motor 2"
-        android:layout_below="@+id/ccw"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:id="@+id/ccw_mt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="CCW Motor 2"
-        android:layout_below="@+id/cw_mt2"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:id="@+id/all_cw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ccw_mt2"
-        android:layout_centerHorizontal="true"
-        android:text="ALL CW" />
-
-    <Button
-        android:id="@+id/all_ccw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/all_cw"
-        android:layout_alignRight="@+id/all_cw"
-        android:layout_below="@+id/all_cw"
-        android:text="ALL CCW" />
+        android:layout_alignBaseline="@+id/newUserText"
+        android:layout_alignBottom="@+id/newUserText"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_toEndOf="@+id/newUserText"
+        android:layout_toRightOf="@+id/newUserText"
+        android:text="Click Me and Login"
+        android:visibility="visible" />
 
 </RelativeLayout>

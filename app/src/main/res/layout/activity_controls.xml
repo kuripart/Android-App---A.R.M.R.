@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kuri.motorcontroller.ControlsActivity">
+
+    <Button
+        android:id="@+id/bluetooth_find"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="SEARCH BLUETOOTH DEVICES"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <Button
+        android:id="@+id/cw"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bluetooth_find"
+        android:layout_centerHorizontal="true"
+        android:text="CW MOTOR 1" />
+
+    <Button
+        android:id="@+id/ccw"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="CCW MOTOR 1" />
+
+    <Button
+        android:id="@+id/servo_180"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all_ccw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="SERVO 180 TURN" />
+
+    <Button
+        android:id="@+id/cw_mt2"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="CW Motor 2" />
+
+    <Button
+        android:id="@+id/ccw_mt2"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cw_mt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="CCW Motor 2" />
+
+    <Button
+        android:id="@+id/all_cw"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccw_mt2"
+        android:layout_centerHorizontal="true"
+        android:text="ALL CW" />
+
+    <Button
+        android:id="@+id/all_ccw"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/all_cw"
+        android:layout_alignRight="@+id/all_cw"
+        android:layout_below="@+id/all_cw"
+        android:text="ALL CCW" />
+
+
+
+
+
+</RelativeLayout>

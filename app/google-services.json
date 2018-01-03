@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "786810624753",
+    "firebase_url": "https://motorcontroller-542bf.firebaseio.com",
+    "project_id": "motorcontroller-542bf",
+    "storage_bucket": "motorcontroller-542bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786810624753:android:78a77bd37046676b",
+        "android_client_info": {
+          "package_name": "com.kuri.motorcontroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786810624753-k6np363b4q38n27riok0c2j5umkvsr8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kuri.motorcontroller",
+            "certificate_hash": "bafd8ba4b9bbfc8961a7b513bb47007ec2055e46"
+          }
+        },
+        {
+          "client_id": "786810624753-17gugm48shfbikgvhpc3gl29hiv2n63g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE2E923SnD3q_jjjSL8e6xt3hqdBqqcTA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786810624753-17gugm48shfbikgvhpc3gl29hiv2n63g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
